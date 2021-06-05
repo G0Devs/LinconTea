@@ -39,6 +39,7 @@
 
 #frame {
   position: relative;
+  display: flex;
 
   /* width: 597px;
   height: 405px; */
