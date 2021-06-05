@@ -5,8 +5,9 @@ import './App.css';
 function App() {
   return (
     <div id='frame'>
-      <img src={bg} className='ui huge centered image' alt='LINCON background' />
-      <img id='mainLogo' src={logo} className = 'ui medium centered image' alt='LINCON logo'/>
+      {/* <h3>Website Under Construction! Please visit later.</h3> */}
+      <img id= 'bg' src={bg} className='ui huge centered image' alt='LINCON background' />
+      <img id='mainLogo' src={logo} className='ui medium centered image' alt='LINCON logo' />
     </div>
 
   );
