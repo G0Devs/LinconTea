@@ -6,10 +6,9 @@ function App() {
   return (
     <div id='frame'>
       {/* <h3>Website Under Construction! Please visit later.</h3> */}
-      <img id= 'bg' src={bg} className='ui huge centered image' alt='LINCON background' />
-      <img id='mainLogo' src={logo} className='ui medium centered image' alt='LINCON logo' />
+      <img id= 'bg' src={bg} alt='LINCON background' />
+      <img id='mainLogo' src={logo} alt='LINCON logo' />
     </div>
-
   );
 }
 

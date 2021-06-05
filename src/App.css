@@ -40,22 +40,29 @@
 #frame {
   position: relative;
   display: flex;
-
-  /* width: 597px;
-  height: 405px; */
-
-  /* background-image: url(bg.jpg); */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* background-image: url(bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size:50vh 50vh; 
+  background-size:50vh 50vh;  */
 }
 
 #mainLogo {
+  height: auto;
+  width: 60vh;
   position: absolute;
-  left: 0;
+  /* left: 0;
   top: 0;
-  right: 0;
-  bottom: 0;
+  right: 0;*/
+  /* bottom: 0; */
 
-  display: block;
-  margin: auto; }
+  /* display: block;
+  margin: auto; */
+}
+
+#bg {
+  height: 75vh;
+  /* width: auto; */
+}
