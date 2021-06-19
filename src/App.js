@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar'
+import Route from './components/Route'
 
 const menuOptions = [
   {
@@ -25,11 +26,21 @@ const menuOptions = [
   }
 ];
 function App() {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname || menuOptions[0].link);
+  const onRouteChange = () => {
+    setCurrentPath(window.location.pathname);
+  }
+  useEffect(() => {
+    window.addEventListener('routeChange', onRouteChange);
+    return (() => {
+      window.removeEventListener('routeChange', onRouteChange);
+    });
+  }, []);
   return (
     <div>
-      <Navbar menuOptions={menuOptions} />
+      <Navbar activePath={currentPath} menuOptions={menuOptions} />
+      <Route currentPath={currentPath} />
     </div>
-
   );
 }
 
